@@ -67,7 +67,7 @@ const workoutSeed = [
         duration: 20,
         weight: 285,
         reps: 10,
-        sets: 4,
+        sets: 4,e
       },
     ],
   },
