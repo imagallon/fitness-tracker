@@ -5,7 +5,8 @@ const Workout = require("../models/workout.js");
 router.get("/api/workouts", async (req, res) => {
   try {
     const workoutData = await Workout.find();
-    res.status(200).json(workoutData);
+    console.log(workoutData[0].exercises);
+    res.json(workoutData);
   } catch (err) {
     res.status(500).json(err);
   }
